@@ -1,0 +1,5 @@
+file = open('file.txt', 'r')
+z = file.readlines()
+a = sum(len(i.split()) for i in z)
+file.close()
+print('total number of words:', a)
